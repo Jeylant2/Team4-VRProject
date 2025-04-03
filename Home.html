@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+
+<html> 
+<html class="a-fullscreen" foxified>
+<head> 
+<title>Home page</title>
+<script src="aframe.js"></script>
+<script src="environment.js"></script>
+</head>
+ 
+<body>
+
+<a-scene>
+<a-scene cursor="rayOrigin: mouse" raycaster="objects: .raycastable">
+
+<a-entity environment="preset:yavapai" ></a-entity>
+
+<a-entity geometry="primitive: sphere; radius: 2" material="color: green" position="0 1.5 -8" scale="0.4 0.4 0.4" link="href:Site1.html"> </a-entity>  
+<a-text value="Grads Cafe" position="-0.4 3 -8" scale="0.8 0.8 0.8" color="purple"></a-text>
+
+<a-entity geometry="primitive: sphere; radius: 2" material="color: green" position="5 1.5 -8" scale="0.4 0.4 0.4" link="href:Site2.html;title:site 2"> </a-entity>
+<a-text value="K2 Top Floor" position="4.6 3 -8" scale="0.8 0.8 0.8" color="purple"></a-text>
+
+<a-entity geometry="primitive: sphere; radius: 2" material="color: green" position="10 1.5 -8" scale="0.4 0.4 0.4"  link="href:Site3.html;title:site 3"> </a-entity>
+
+<a-text value="LSBU Hub Library" position="9.6 3 -8" scale="0.8 0.8 0.8" color="purple""></a-text>
+<a-entity geometry="primitive: sphere; radius: 2" material="color: green" position="15 1.5 -8" scale="0.4 0.4 0.4"  link="href:Site4.html;title:site 4"> </a-entity>
+
+<a-text value="Waterloo Theatre" position="14.6 3 -8" scale="0.8 0.8 0.8" color="purple"></a-text>
+<a-entity geometry="primitive: sphere; radius: 2" material="color: green" position="20 1.5 -8" scale="0.4 0.4 0.4"  link="href:Robot.html;title:site 5"> </a-entity>
+
+<a-text value="LSBU Student Union Centre" position="19.6 3 -8" scale="0.8 0.8 0.8" color="purple"></a-text>
+<a-entity gltf-model="scene1.gltf" position="11 0 -3" scale="0.01 0.01 0.01" animation="property:rotation;to :0 180 0; loop:true; dur: 9001"></a-entity>
+
+<a-text value="Click on the Spheres to Teleport to a Site" position="11 4 -8" scale="1 1 1" color="white"></a-text>
+
+</a-scene> 
+
+
+<!-- player viewport -->  
+<a-camera position="10 1 0" >
+
+<!-- cursor circle -->  
+<a-cursor color="red">  
+</a-cursor>
+</a-camera> 
+</a-scene>   
+<br>
+<a-entity id="rig" position="10 1 0">
+<a-entity id=camera" look-controls"> 
+</a-entity>
+<a-entity id="leftHand" laser controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity> 
+<a-entity id="rightHand" laser controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>  
+</a-entity>
+</body> 
+</html> 

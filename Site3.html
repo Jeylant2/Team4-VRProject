@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+
+<html> 
+<html class="a-fullscreen" foxified>
+<head> 
+<title>LSBU Hub library</title>
+<script src="aframe.js"></script> 
+</head> 
+<body>
+<a-scene>
+<a-scene cursor="rayOrigin: mouse" raycaster="objects: .raycastable">
+             <a-assets>
+             <video id="site3" autoplay loop="true" src="media/Site3.mp4">
+	     <audio id="audio3" autoplay loop="true" src="media/Audio3.m4a">
+             </a-assets>
+       <a-videosphere src="media/Site3.mp4"></a-videosphere>
+
+<a-entity geometry="primitive: sphere; radius: 2" material="color: blue" position="0 0 -4" scale="0.4 0.4 0.4" link="href:Home.html;title:Home"> </a-entity>  
+<a-text value="Click To Teleport Back" rotation="0 45 0" position="0 1 -3" scale="0.8 0.8 0.8" color="cyan"></a-text>
+</a-scene> 
+<!-- player viewport -->  
+<a-camera position="4 0 0" >
+
+<!-- cursor circle -->  
+<a-cursor color="red">  
+</a-cursor>
+</a-camera> 
+</a-scene>   
+<br>
+<a-entity id="rig" position="4 0 0">
+<a-entity id=camera" look-controls"> 
+</a-entity>
+<a-entity id="leftHand" laser controls="hand: left" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity> 
+<a-entity id="rightHand" laser controls="hand: right" raycaster="objects: .raycastable" line="color: #118A7E"></a-entity>  
+</a-entity>
+</body> 
+</html> 
