@@ -7,12 +7,7 @@
 }
 
 .element .div {
-  background-color: rgba(255, 255, 255, 1.0);
-  background: linear-gradient(
-    180deg,
-    rgba(96, 39, 89, 1) 0%,
-    rgba(24, 9, 22, 1) 100%
-  );
+  background-color: #602658;
   width: 1920px;
   height: 1080px;
   position: relative;
@@ -141,4 +136,13 @@
   height: 36px;
   top: 1px;
   left: 0;
+}
+
+.element .screenshot {
+  position: absolute;
+  width: 286px;
+  height: 227px;
+  top: 0;
+  left: 1580px;
+  object-fit: cover;
 }
